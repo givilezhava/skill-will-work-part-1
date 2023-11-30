@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function operation(a,b,operation){
+        if( !Number.isInteger(a)|| !Number.isInteger(b)|| !['+','-','*','/']){
+            return false
+        }
+        switch(operation){
+            case '+':
+                return a+b;
+            case '-':
+                return a-b;    
+            case '*':
+                return a*b ;
+            case '/':
+                return a/b ; 
+                
+          default: 
+
+         
+         return false      
+    
+    
+    
+        }
+
+
+    }
+console.log(operation(5, 3, '+')); 
+console.log(operation(5, 3, '-')); 
+console.log(operation(5, 5, '*')); 
+console.log(operation(24, 3, '/')); 
+console.log(operation(5, 3, '^')); 
+console.log(operation('abc', 3, '+'));
+
+
+
+
+
+
+    </script>
+</body>
+</html>
